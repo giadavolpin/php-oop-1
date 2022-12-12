@@ -1,7 +1,9 @@
 <?php
 include_once __DIR__ . '/Models/user.php';
 
-$nome_film = new Movie('Titanic', 'romantico', '1997', '10');
+$titanic = new Movie('Titanic', 'romantico', 1997, 10);
+var_dump($titanic);
 
-var_dump($nome_film);
+$avatar = new Movie('Avatar', 'fantascienza', 2009, 10);
+var_dump($avatar);
 ?>

@@ -6,7 +6,7 @@ class Movie
     public $anno;
     public $prezzo;
 
-
+    /* funzione costruttore */
     function __construct(string $_titolo, string $_genere, int $_anno, int $_prezzo)
     {
         $this->titolo = $_titolo;
@@ -15,6 +15,7 @@ class Movie
         $this->prezzo = $_prezzo;
     }
 
+    /* metodo */
     public function getSconto()
     {
         if ($this->genere == 'romantico') {
@@ -23,7 +24,7 @@ class Movie
             $this->prezzo = 3;
         }
     }
-
+//NON CREDO FUNZIONI IL METODO
 
 }
 
